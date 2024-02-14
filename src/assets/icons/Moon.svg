@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+    height="512" x="0" y="0" viewBox="0 0 511.989 511.989" style="enable-background:new 0 0 512 512"
+    xml:space="preserve" class="">
+    <g>
+        <circle cx="255.994" cy="255.994" r="255.994" style="" fill="#27536b" data-original="#27536b" class=""></circle>
+        <path
+            d="M391.37 292.817c-48.362 48.362-126.774 48.362-175.136 0s-48.362-126.774 0-175.136c10.084-10.084 21.476-18.057 33.627-23.935-39.798 1.061-79.279 16.774-109.653 47.147-62.946 62.946-62.946 165.003 0 227.949s165.003 62.946 227.949 0c30.374-30.374 46.086-69.854 47.147-109.653-5.877 12.152-13.85 23.544-23.934 33.628z"
+            style="" fill="#fcd57e" data-original="#fcd57e" class=""></path>
+        <path
+            d="m355.804 153.568 5.709 51.649 5.711-51.649 51.649-5.709-51.649-5.711-5.711-51.649-5.709 51.649-51.65 5.711zM112.365 410.626l4.09 36.997 4.09-36.997 36.997-4.09-36.997-4.09-4.09-36.997-4.09 36.997-36.997 4.09z"
+            style="" fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M243.188 248.208h10.362v10.362h-10.362z" style="" transform="rotate(-45.001 248.367 253.394)"
+            fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M418.93 193.377h10.362v10.362H418.93z" style="" transform="rotate(-45.001 424.11 198.564)"
+            fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M450.017 284.419h10.362v10.362h-10.362z" style="" transform="rotate(-45.001 455.197 289.607)"
+            fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M76.067 124.535h10.362v10.362H76.067z" style="" transform="rotate(-45.001 81.247 129.718)"
+            fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M346.322 421.433h10.362v10.362h-10.362z" style="" transform="rotate(-45.001 351.5 426.62)"
+            fill="#ffffff" data-original="#ffffff"></path>
+        <path d="M117.587 97.883h10.362v10.362h-10.362z" style="" transform="rotate(-45.001 122.768 103.066)"
+            fill="#ffffff" data-original="#ffffff"></path>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin custom-width($pixel) {
+    width: $pixel;
+    width: 100%;
+}
+@mixin title-margin-top {
+    margin-top: 120px;
+}

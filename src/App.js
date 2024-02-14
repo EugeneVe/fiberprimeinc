@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollOnTop from "./components/scrollontop/ScrollOnTop";
+import Main from "./pages/main/Main";
+import AboutSection from "./layouts/aboutSection/AboutSection";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import ContactSection from "./layouts/contactSection/ContactSection";
+import "./styles/App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <ScrollOnTop />
+                <Header />
+                <Routes>
+                    <Route
+                        path="/about"
+                        element={<AboutSection />}
+                    />
+                    <Route
+                        path="/contacts"
+                        element={<ContactSection />}
+                    />
+                    <Route
+                        path="/"
+                        element={<Main />}
+                    />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

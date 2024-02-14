@@ -1,0 +1,33 @@
+@import "../../styles/Mixin.scss";
+
+.footer-wrapper {
+    width: 100%;
+    height: 200px;
+    background-color: var(--light-primary-color);
+    @include flexbox(row, center, center);
+    padding-bottom: 25px;
+    .footer-content {
+        @include flexbox(row, space-between, end);
+        width: 100%;
+        height: 100%;
+        max-width: 960px;
+        color: var(--light-primary-white-color);
+        @media screen and (max-width: 990px) {
+            padding: 0 20px 0 20px;
+        }
+        .footer-logo {
+            svg {
+                height: 150px;
+                width: 100%;
+            }
+        }
+        .date {
+            color: rgb(250, 250, 250);
+        }
+        .designed {
+            a {
+                color: rgb(250, 250, 250);
+            }
+        }
+    }
+}
