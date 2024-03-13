@@ -6,6 +6,10 @@
     background-color: var(--light-primary-color);
     @include flexbox(row, center, center);
     padding-bottom: 25px;
+    @media screen and (max-width: 990px) {
+        height: 100%;
+        padding-top: 30px;
+    }
     .footer-content {
         @include flexbox(row, space-between, end);
         width: 100%;
@@ -14,16 +18,37 @@
         color: var(--light-primary-white-color);
         @media screen and (max-width: 990px) {
             padding: 0 20px 0 20px;
+            @include flexbox(column, center, center);
         }
         .footer-logo {
             svg {
                 height: 150px;
                 width: 100%;
             }
+            @media screen and (max-width: 990px) {
+                height: 100%;
+                padding-top: 30px;
+            }
         }
-        .date {
-            color: rgb(250, 250, 250);
+        .footer-data-section {
+            @include flexbox(column, center, center);
+            .partners {
+                @include flexbox(row, space-between, end);
+                width: 100%;
+                padding: 40px 0;
+                b {
+                    color: rgb(253, 253, 253);
+                }
+                svg {
+                    width: 80px;
+                    height: 100%;
+                }
+            }
+            .date {
+                color: rgb(250, 250, 250);
+            }
         }
+
         .designed {
             a {
                 color: rgb(250, 250, 250);

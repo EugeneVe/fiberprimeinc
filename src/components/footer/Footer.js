@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as FiberPrimeFullLogo } from "../../assets/icons/FiberPrime.svg";
+import { ReactComponent as NwtLogo } from "../../assets/icons/nwt-logo.svg";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -11,8 +12,16 @@ const Footer = () => {
                 <div className="footer-logo">
                     <FiberPrimeFullLogo />
                 </div>
-                <div className="date">
-                    Copyright © Fiber Prime Inc. {startYear} {startYear !== nextYear ? <>- {nextYear}</> : <></>}
+                <div className="footer-data-section">
+                    <div className="partners">
+                        <b>Partners:</b>
+                        <a href="https://nwt-llc.com">
+                            <NwtLogo />
+                        </a>
+                    </div>
+                    <div className="date">
+                        Copyright © Fiber Prime Inc. {startYear} {startYear !== nextYear ? <>- {nextYear}</> : <></>}
+                    </div>
                 </div>
 
                 <div className="designed">

@@ -6,9 +6,19 @@
 }
 
 @mixin custom-width($pixel) {
-    width: $pixel;
+    max-width: $pixel;
     width: 100%;
 }
 @mixin title-margin-top {
     margin-top: 120px;
+}
+@mixin section-content-layout {
+    @include flexbox(row, center, center);
+    gap: 40px;
+    padding-top: 80px;
+    @include custom-width(960px);
+    color: var(--light-primary-black-color);
+    @media screen and (max-width: 990px) {
+        padding: 0 20px 0 20px;
+    }
 }

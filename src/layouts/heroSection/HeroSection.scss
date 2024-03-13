@@ -1,7 +1,6 @@
 @import "../../styles/Mixin.scss";
 
 .hero-section-wrapper {
-    overflow: hidden;
     position: relative;
     width: 100%;
     background-image: url("../../assets/image/AdobeStock_392632556.jpeg");
@@ -11,6 +10,9 @@
     -webkit-box-shadow: 0px 5px 65px -20px rgba(0, 0, 0, 0.65);
     -moz-box-shadow: 0px 5px 65px -20px rgba(0, 0, 0, 0.65);
     box-shadow: 0px 5px 65px -20px rgba(0, 0, 0, 0.65);
+    // @media screen and (max-width: 990px) {
+    //     overflow-x: hidden !important;
+    // }
     .hero-section-upper-layer {
         @include flexbox(row, center, center);
         background: rgb(33, 42, 76);
@@ -28,6 +30,9 @@
                     svg {
                         width: 200px;
                         height: 100%;
+                        @media screen and (max-width: 500px) {
+                            width: 150px;
+                        }
                     }
                 }
             }
@@ -39,6 +44,9 @@
                 background: linear-gradient(to right, #6a69ce 0%, #9769bc 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                @media screen and (max-width: 500px) {
+                    font-size: 50px;
+                }
             }
             @media screen and (max-width: 990px) {
                 padding: 0 20px 0 20px;

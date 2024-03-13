@@ -2,10 +2,14 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollOnTop from "./components/scrollontop/ScrollOnTop";
 import Main from "./pages/main/Main";
-import AboutSection from "./layouts/aboutSection/AboutSection";
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
+import AboutSection from "./layouts/aboutSection/AboutSection";
+import ServicesSection from "./layouts/servicesSection/ServicesSection";
+import PartnershipSection from "./layouts/partnershipSection/PartnershipSection";
+import CareersSection from "./layouts/careersSection/CareersSection";
+import TrainingSection from "./layouts/trainingSection/TrainingSection";
 import ContactSection from "./layouts/contactSection/ContactSection";
+import Footer from "./components/footer/Footer";
 import "./styles/App.css";
 
 function App() {
@@ -21,6 +25,22 @@ function App() {
                     <Route
                         path="/about"
                         element={<AboutSection />}
+                    />
+                    <Route
+                        path="/services"
+                        element={<ServicesSection />}
+                    />
+                    <Route
+                        path="/partnership"
+                        element={<PartnershipSection />}
+                    />
+                    <Route
+                        path="/careers"
+                        element={<CareersSection />}
+                    />
+                    <Route
+                        path="/training"
+                        element={<TrainingSection />}
                     />
                     <Route
                         path="/contacts"

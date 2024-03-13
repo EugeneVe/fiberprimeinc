@@ -1,19 +1,19 @@
 import React from "react";
-import { ReactComponent as ContactsIllustration } from "../../assets/image/contactus.svg";
 import "aos/dist/aos.css";
+import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
 import "../layoutsStyles/SectionsStyle.scss";
 
-const ContactSection = () => {
+const TrainingSection = () => {
     return (
         <div
-            className="section-wrapper contacts"
+            className="section-wrapper"
             id="about-section"
         >
             <div
                 className="title"
                 data-aos="fade-down"
             >
-                CONTACT US
+                TRAINING
             </div>
             <div
                 className="sub-title"
@@ -46,11 +46,11 @@ const ContactSection = () => {
                     data-aos="fade-left"
                     data-aos-duration="1000"
                 >
-                    <ContactsIllustration />
+                    <AboutIllustration />
                 </div>
             </div>
         </div>
     );
 };
 
-export default ContactSection;
+export default TrainingSection;

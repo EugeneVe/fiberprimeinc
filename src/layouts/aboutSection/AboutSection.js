@@ -1,24 +1,54 @@
 import React from "react";
 import "aos/dist/aos.css";
-import { useLocation } from "react-router-dom";
-import "./AboutSection.scss";
+import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
+import "../layoutsStyles/SectionsStyle.scss";
 
 const AboutSection = () => {
-    const location = useLocation();
-    const isAboutPage = location.pathname === "/about";
-
     return (
         <div
+            className="section-wrapper"
             id="about-section"
-            className="about-section-wrapper"
         >
             <div
-                className={`title ${isAboutPage ? "title-margin-top" : ""}`}
+                className="title"
                 data-aos="fade-down"
             >
                 ABOUT US
             </div>
-            <div className="about-section-content">AboutSection</div>
+            <div
+                className="sub-title"
+                data-aos="fade-down"
+                data-aos-duration="800"
+            >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </div>
+            <div className="section-content">
+                <div className="left-section">
+                    <div
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                    >
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>
+                    </div>
+                    <br />
+                    <br />
+                    <p
+                        data-aos="fade-right"
+                        data-aos-duration="500"
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div
+                    className="right-section"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                >
+                    <AboutIllustration />
+                </div>
+            </div>
         </div>
     );
 };

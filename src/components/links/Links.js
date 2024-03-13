@@ -1,35 +1,23 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { Link } from "react-router-dom";
-import { Link as Anchor } from "react-scroll";
 import { useLocation } from "react-router-dom";
 import "./Links.scss";
 
 const Links = () => {
     const location = useLocation();
-    const isAboutPage = location.pathname === "/about";
-    const isContactPage = location.pathname === "/contacts";
     const [themeSwith, setThemeSwith] = useContext(ThemeContext);
 
+    const getLinkClassName = (pathname, currentPage) => {
+        return pathname === currentPage ? "on-page" : "";
+    };
+
     return (
-        <div className="links-wrapper">
+        <div className="links-wrapper open-links">
             <ul>
                 <li>
-                    {isAboutPage || isContactPage ? (
-                        <Link to="/">Home</Link>
-                    ) : (
-                        <Anchor
-                            to="home-page"
-                            smooth={true}
-                            duration={500}
-                        >
-                            Home
-                        </Anchor>
-                    )}
-                </li>
-                <li>
                     <Link
-                        className={isAboutPage ? "on-page" : ""}
+                        className={getLinkClassName(location.pathname, "/about")}
                         to="/about"
                     >
                         About
@@ -37,7 +25,39 @@ const Links = () => {
                 </li>
                 <li>
                     <Link
-                        className={isContactPage ? "on-page" : ""}
+                        className={getLinkClassName(location.pathname, "/services")}
+                        to="/services"
+                    >
+                        Services
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={getLinkClassName(location.pathname, "/partnership")}
+                        to="/partnership"
+                    >
+                        Partnership
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={getLinkClassName(location.pathname, "/careers")}
+                        to="/careers"
+                    >
+                        Careers
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={getLinkClassName(location.pathname, "/training")}
+                        to="/training"
+                    >
+                        Training
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        className={getLinkClassName(location.pathname, "/contacts")}
                         to="/contacts"
                     >
                         Contacts
