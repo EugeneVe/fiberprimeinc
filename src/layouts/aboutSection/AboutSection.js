@@ -24,7 +24,7 @@ const AboutSection = () => {
                 data-aos="fade-down"
                 data-aos-duration="800"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Our aim is to deliver an exceptional experience to our customers and partners
             </div>
             <div className="section-content">
                 <div className="left-section">
@@ -32,7 +32,7 @@ const AboutSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="800"
                     >
-                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>
+                        <b>Safety, Quality and Integrity are our the principles that fuel us</b>
                     </div>
                     <br />
                     <br />
@@ -40,9 +40,9 @@ const AboutSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="500"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        At Fiber Prime, we work to deliver results. Whether it's a deadline, a budget, a solution to a problem; Fiber Prime approaches every challenge from the perspective of a
+                        solution. Our ability to combine technical knowledge, previous experience and growing pains, a large database of subcontractor partners and back end resources positions us to
+                        overcome any potential logistical or technical challenges.
                     </p>
                 </div>
                 <div

@@ -21,7 +21,7 @@ const CareersSection = () => {
                 data-aos="fade-down"
                 data-aos-duration="800"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Align your future with an industry that is growing.
             </div>
             <div className="section-content">
                 <div className="left-section">
@@ -29,7 +29,7 @@ const CareersSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="800"
                     >
-                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>
+                        <b>Fiber Prime believes without a doubt that people are the most important resource in high-tech construction.</b>
                     </div>
                     <br />
                     <br />
@@ -37,9 +37,8 @@ const CareersSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="500"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        The technology changes, the advancements keep rolling in, but it takes good people to deploy. Fiber Prime is always interested in positive minded, dynamic individuals that want
+                        to take on the challenges of bringing connectivity to the masses.
                     </p>
                 </div>
                 <div

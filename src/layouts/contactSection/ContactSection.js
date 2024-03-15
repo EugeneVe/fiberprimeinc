@@ -7,7 +7,7 @@ import "./ContactSection.scss";
 
 const ContactSection = () => {
     const location = useLocation();
-    const onTrainingPage = location.pathname === "/contacts";
+    const onTrainingPage = location.pathname === "/contact";
 
     return (
         <div className={`section-wrapper contacts  ${onTrainingPage ? "on-page" : ""}`}>
@@ -22,16 +22,14 @@ const ContactSection = () => {
                 data-aos="fade-down"
                 data-aos-duration="800"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Get in touch with Fiber Prime Inc. to explore possibilities together...
             </div>
             <div className="section-content">
                 <div className="left-section">
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
-                    >
-                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>
-                    </div>
+                    ></div>
 
                     <div
                         className="address"
@@ -46,10 +44,10 @@ const ContactSection = () => {
                             2400 Satellite Blvd, Buford, GA 30518
                         </a>
                         <span> Phone: </span>
-                        <a href="tel:">+1(000)000-0000</a>
-                        <a href="tel:">+1(000)000-0000</a>
+                        <a href="tel:">+1(404)556-2876</a>
+                        <a href="tel:">+1(770)545-7169</a>
                         <span>Email: </span>
-                        <a href="mailto:aaa@aaa.com">aaa@aaa.com</a>
+                        <a href="mailto:elijah@prime-fiber.com">elijah@prime-fiber.com</a>
                     </div>
                 </div>
                 <div

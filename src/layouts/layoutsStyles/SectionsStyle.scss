@@ -13,7 +13,7 @@
         color: var(--light-primary-black-color);
     }
     .sub-title {
-        font-size: 14px;
+        font-size: 18px;
         font-style: italic;
         max-width: 450px;
         text-align: center;
@@ -27,6 +27,9 @@
         @include section-content-layout;
         .left-section {
             width: 50%;
+            @media screen and (max-width: 990px) {
+                width: 95%;
+            }
             b {
                 font-size: var(--font-size-regular);
             }
@@ -42,6 +45,9 @@
         .right-section {
             @include flexbox(row, center, center);
             width: 50%;
+            @media screen and (max-width: 990px) {
+                width: 95%;
+            }
             .illustration {
                 img {
                     border-radius: 60px;
@@ -50,10 +56,16 @@
                     aspect-ratio: 4/2.5;
                     object-fit: cover;
                     object-position: right;
+                    @media screen and (max-width: 990px) {
+                        border-radius: 30px;
+                    }
                 }
             }
         }
         .midle-section {
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         @media screen and (max-width: 990px) {
             padding: 60px 20px;
@@ -75,7 +87,10 @@
 }
 .on-page {
     height: 100vh;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
+    .section-content {
+        height: 60%;
+    }
     @media screen and (max-width: 990px) {
         height: 100%;
     }

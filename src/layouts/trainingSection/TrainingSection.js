@@ -21,7 +21,7 @@ const TrainingSection = () => {
                 data-aos="fade-down"
                 data-aos-duration="800"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                Fiber Prime can accelerate the learning curve and help position you to take on bigger projects
             </div>
             <div className="section-content">
                 <div className="left-section">
@@ -29,7 +29,7 @@ const TrainingSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="800"
                     >
-                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>
+                        <b>Fiber Prime has experience and resources to help your team get trained up.</b>
                     </div>
                     <br />
                     <br />
@@ -37,9 +37,8 @@ const TrainingSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="500"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Fiber Prime has experience and resources to help your team get trained up. We offer curriculum for both theoretical and practical knowledge advancement. We have our own proven
+                        system that can train your team in a short period of time, and allow you to tackle bigger projects with more advanced tech.
                     </p>
                 </div>
                 <div

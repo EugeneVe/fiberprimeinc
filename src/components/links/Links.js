@@ -58,9 +58,9 @@ const Links = () => {
                 <li>
                     <Link
                         className={getLinkClassName(location.pathname, "/contacts")}
-                        to="/contacts"
+                        to="/contact"
                     >
-                        Contacts
+                        Contact
                     </Link>
                 </li>
                 <div className="switcher">

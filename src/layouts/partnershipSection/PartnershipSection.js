@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
@@ -7,16 +7,6 @@ import "./PartnershipSection.scss";
 const PartnershipSection = () => {
     const location = useLocation();
     const isMainPage = location.pathname === "/";
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsSmallScreen(window.innerWidth <= 990);
-        };
-        checkScreenSize();
-        window.addEventListener("resize", checkScreenSize);
-        return () => window.removeEventListener("resize", checkScreenSize);
-    }, []);
 
     return (
         <div className="section-wrapper partnership">
@@ -32,34 +22,28 @@ const PartnershipSection = () => {
                 data-aos-duration="800"
             >
                 At Fiber Prime, we're experiencing high demand for our services as businesses and communities seek to enhance their technology infrastructure. To meet this demand and exceed customer
-                expectations, we're seeking experienced subcontractors nationwide. If you're skilled and ready to join our growing family, with an incredible backlog of projects awaiting, join the
+                expectations, we're seeking experienced subcontractors nationwide. If you're skilled and ready to join our growing family, with an incredible backlog of projects awaiting, partner the
                 Team at Fiber Prime today.
             </div>
             <div className="section-content">
-                <div className="midle-section">
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="800"
-                    ></div>
-                    <br />
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="500"
-                    >
-                        {!isMainPage && !isSmallScreen ? (
-                            <iframe
-                                className="form"
-                                src="https://forms.monday.com/forms/embed/f658230862daa7590c89d1da7e2496d7?r=use1"
-                            ></iframe>
-                        ) : (
-                            <Link
-                                to="https://forms.monday.com/forms/f658230862daa7590c89d1da7e2496d7?r=use1"
-                                className="mobile-link-to-form"
-                            >
-                                <button>Please fill up the form</button>
-                            </Link>
-                        )}
-                    </div>
+                <div
+                    className="midle-section"
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                >
+                    {!isMainPage ? (
+                        <iframe
+                            className="form"
+                            src="https://forms.monday.com/forms/embed/f658230862daa7590c89d1da7e2496d7?r=use1"
+                        ></iframe>
+                    ) : (
+                        <Link
+                            to="/partnership"
+                            className="mobile-button"
+                        >
+                            <button>Please fill out the form</button>
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

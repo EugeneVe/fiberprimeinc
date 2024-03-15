@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollOnTop from "./components/scrollontop/ScrollOnTop";
-import Main from "./pages/main/Main";
-import Header from "./components/header/Header";
-import AboutSection from "./layouts/aboutSection/AboutSection";
-import ServicesSection from "./layouts/servicesSection/ServicesSection";
-import PartnershipSection from "./layouts/partnershipSection/PartnershipSection";
-import CareersSection from "./layouts/careersSection/CareersSection";
-import TrainingSection from "./layouts/trainingSection/TrainingSection";
-import ContactSection from "./layouts/contactSection/ContactSection";
-import Footer from "./components/footer/Footer";
+import ScrollOnTop from "components/scrollontop/ScrollOnTop";
+import Main from "pages/main/Main";
+import Header from "components/header/Header";
+import AboutSection from "layouts/aboutSection/AboutSection";
+import ServicesSection from "layouts/servicesSection/ServicesSection";
+import PartnershipSection from "layouts/partnershipSection/PartnershipSection";
+import CareersSection from "layouts/careersSection/CareersSection";
+import TrainingSection from "layouts/trainingSection/TrainingSection";
+import ContactSection from "layouts/contactSection/ContactSection";
+import Footer from "components/footer/Footer";
+import PageNotFound from "pages/pageNotFound/PageNotFound";
 import "./styles/App.scss";
 
 function App() {
@@ -43,12 +44,16 @@ function App() {
                         element={<TrainingSection />}
                     />
                     <Route
-                        path="/contacts"
+                        path="/contact"
                         element={<ContactSection />}
                     />
                     <Route
                         path="/"
                         element={<Main />}
+                    />
+                    <Route
+                        path="*"
+                        element={<PageNotFound />}
                     />
                 </Routes>
                 <Footer />
