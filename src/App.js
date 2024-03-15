@@ -10,7 +10,7 @@ import CareersSection from "./layouts/careersSection/CareersSection";
 import TrainingSection from "./layouts/trainingSection/TrainingSection";
 import ContactSection from "./layouts/contactSection/ContactSection";
 import Footer from "./components/footer/Footer";
-import "./styles/App.css";
+import "./styles/App.scss";
 
 function App() {
     useEffect(() => {

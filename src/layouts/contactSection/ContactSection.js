@@ -1,14 +1,12 @@
 import React from "react";
-import { ReactComponent as ContactsIllustration } from "../../assets/image/contactus.svg";
+import ContactsImage from "assets/image/illustration_contacts.jpg";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
+import "./ContactSection.scss";
 
 const ContactSection = () => {
     return (
-        <div
-            className="section-wrapper contacts"
-            id="about-section"
-        >
+        <div className="section-wrapper contacts">
             <div
                 className="title"
                 data-aos="fade-down"
@@ -22,7 +20,7 @@ const ContactSection = () => {
             >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <div className="section-content">
+            <div className="section-content contacts-content-style">
                 <div className="left-section">
                     <div
                         data-aos="fade-right"
@@ -33,12 +31,18 @@ const ContactSection = () => {
                     <br />
                     <br />
                     <p
+                        className="address"
                         data-aos="fade-right"
                         data-aos-duration="500"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Address: <br />
+                        <a href="https://maps.app.goo.gl/SeP7kgyebYn8qTCJ6">2400 Satellite Blvd, Buford, GA 30518</a>
+                        <br />
+                        Phone: <br />
+                        <a href="tel:">+1(000)000-0000</a>
+                        <br />
+                        <a href="tel:">+1(000)000-0000</a> <br />
+                        <a href="mailto:aaa@aaa.com">Email: aaa@aaa.com</a>
                     </p>
                 </div>
                 <div
@@ -46,7 +50,12 @@ const ContactSection = () => {
                     data-aos="fade-left"
                     data-aos-duration="1000"
                 >
-                    <ContactsIllustration />
+                    <div className="illustration">
+                        <img
+                            src={ContactsImage}
+                            alt=""
+                        />
+                    </div>
                 </div>
             </div>
         </div>

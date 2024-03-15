@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-// import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 import "./PartnershipSection.scss";
@@ -20,10 +19,7 @@ const PartnershipSection = () => {
     }, []);
 
     return (
-        <div
-            className="section-wrapper partnership"
-            id="about-section"
-        >
+        <div className="section-wrapper partnership">
             <div
                 className="title"
                 data-aos="fade-down"
@@ -40,15 +36,12 @@ const PartnershipSection = () => {
                 Team at Fiber Prime today.
             </div>
             <div className="section-content">
-                <div className="left-section">
+                <div className="midle-section">
                     <div
                         data-aos="fade-right"
                         data-aos-duration="800"
-                    >
-                        {/* <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b> */}
-                    </div>
-                    {/* <br />
-                    <br /> */}
+                    ></div>
+                    <br />
                     <div
                         data-aos="fade-right"
                         data-aos-duration="500"
@@ -68,13 +61,6 @@ const PartnershipSection = () => {
                         )}
                     </div>
                 </div>
-                {/* <div
-                    className="right-section"
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                >
-                    <AboutIllustration />
-                </div> */}
             </div>
         </div>
     );

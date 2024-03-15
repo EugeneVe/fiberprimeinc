@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { ReactComponent as FiberPrimeLogo } from "../../assets/icons/FiberPrimeLogo.svg";
-import { ReactComponent as ArrowsDownIcon } from "../../assets/icons/Arrows.svg";
+import { ReactComponent as FiberPrimeLogo } from "assets/icons/FiberPrimeLogo.svg";
+import { ReactComponent as ArrowsDownIcon } from "assets/icons/Arrows.svg";
 import { Link } from "react-scroll";
 import "aos/dist/aos.css";
 import "./HeroSection.scss";

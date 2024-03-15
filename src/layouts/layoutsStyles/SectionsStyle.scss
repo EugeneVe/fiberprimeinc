@@ -4,6 +4,7 @@
     @include flexbox(column, start, center);
     width: 100%;
     background-color: var(--light-primary-white-color);
+    padding-bottom: 190px;
     .title {
         @include title-margin-top;
         text-align: center;
@@ -25,21 +26,34 @@
     .section-content {
         @include section-content-layout;
         .left-section {
+            width: 50%;
             b {
                 font-size: var(--font-size-regular);
             }
             p {
                 font-size: 18px;
             }
+            .post-title {
+                font-size: 24px;
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
         }
         .right-section {
             @include flexbox(row, center, center);
-            svg {
-                min-width: 400px;
-                @media screen and (max-width: 990px) {
-                    min-width: 200px;
+            width: 50%;
+            .illustration {
+                img {
+                    border-radius: 60px;
+                    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2), 0 0 8px rgba($color: #000000, $alpha: 0.1);
+                    min-width: 300px;
+                    aspect-ratio: 4/2.5;
+                    object-fit: cover;
+                    object-position: right;
                 }
             }
+        }
+        .midle-section {
         }
         @media screen and (max-width: 990px) {
             padding: 60px 20px;

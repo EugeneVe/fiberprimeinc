@@ -1,1 +1,9 @@
 @import "../../styles/Mixin.scss";
+.contacts-content-style {
+    padding-bottom: 40px;
+}
+.address {
+    a {
+        font-weight: 600;
+    }
+}

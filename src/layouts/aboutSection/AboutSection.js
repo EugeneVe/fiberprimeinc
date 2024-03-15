@@ -1,12 +1,13 @@
 import React from "react";
 import "aos/dist/aos.css";
-import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
+// import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
+import AboutImage from "assets/image/illustration_about.jpg";
 import "../layoutsStyles/SectionsStyle.scss";
 
 const AboutSection = () => {
     return (
         <div
-            className="section-wrapper"
+            className="section-wrapper about"
             id="about-section"
         >
             <div
@@ -46,7 +47,12 @@ const AboutSection = () => {
                     data-aos="fade-left"
                     data-aos-duration="1000"
                 >
-                    <AboutIllustration />
+                    <div className="illustration">
+                        <img
+                            src={AboutImage}
+                            alt=""
+                        />
+                    </div>
                 </div>
             </div>
         </div>
