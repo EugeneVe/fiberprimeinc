@@ -1,13 +1,16 @@
 import React from "react";
-import "aos/dist/aos.css";
-// import { ReactComponent as AboutIllustration } from "../../assets/image/aboutus.svg";
+import { useLocation } from "react-router-dom";
 import AboutImage from "assets/image/illustration_about.jpg";
+import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 
 const AboutSection = () => {
+    const location = useLocation();
+    const onAboutPage = location.pathname === "/about";
+
     return (
         <div
-            className="section-wrapper about"
+            className={`section-wrapper about ${onAboutPage ? "on-page" : ""}`}
             id="about-section"
         >
             <div

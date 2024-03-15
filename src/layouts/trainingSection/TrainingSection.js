@@ -1,11 +1,15 @@
 import React from "react";
-import "aos/dist/aos.css";
+import { useLocation } from "react-router-dom";
 import TrainingImage from "assets/image/illustration_training.jpg";
+import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 
 const TrainingSection = () => {
+    const location = useLocation();
+    const onTrainingPage = location.pathname === "/training";
+
     return (
-        <div className="section-wrapper">
+        <div className={`section-wrapper  ${onTrainingPage ? "on-page" : ""}`}>
             <div
                 className="title"
                 data-aos="fade-down"

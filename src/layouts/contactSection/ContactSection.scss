@@ -1,9 +1,21 @@
 @import "../../styles/Mixin.scss";
-.contacts-content-style {
-    padding-bottom: 40px;
-}
+
 .address {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    span {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 800;
+    }
     a {
-        font-weight: 600;
+        font-size: 18px;
+        color: var(--light-primary-black-color);
+        transition: all 300ms ease;
+        transform-origin: left;
+        &:hover {
+            scale: 1.1;
+        }
     }
 }

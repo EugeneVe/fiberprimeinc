@@ -1,11 +1,15 @@
 import React from "react";
-import "aos/dist/aos.css";
+import { useLocation } from "react-router-dom";
 import CareerImage from "assets/image/illustration_career.jpg";
+import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 
 const CareersSection = () => {
+    const location = useLocation();
+    const onCareersPage = location.pathname === "/careers";
+
     return (
-        <div className="section-wrapper careers">
+        <div className={`section-wrapper careers ${onCareersPage ? "on-page" : ""}`}>
             <div
                 className="title"
                 data-aos="fade-down"
