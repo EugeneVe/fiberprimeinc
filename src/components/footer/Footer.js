@@ -29,7 +29,7 @@ const Footer = () => {
                         href="https://eugeneve.github.io/"
                         target="blank"
                     >
-                        YV Desing
+                        YV Design
                     </a>
                 </div>
             </div>

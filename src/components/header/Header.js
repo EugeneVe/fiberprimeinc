@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
-import { MenuOpenContext } from "../../context/MenuOpen";
+import { MenuOpenContext } from "context/MenuOpenContext";
 import Links from "../links/Links";
 import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/icons/FiberPrimeLogo.svg";
+import { ReactComponent as Logo } from "assets/icons/FiberPrimeLogo.svg";
 import "./Header.scss";
 
 const Header = () => {
-    const { open, setOpen } = useContext(MenuOpenContext);
-    const menuToggle = () => setOpen(!open);
+    const { open, setOpen, setLinksList, linksList } = useContext(MenuOpenContext);
+    const menuToggle = () => {
+        setOpen(!open);
+        setLinksList(!linksList);
+    };
 
     return (
         <div className="header-wrapper">

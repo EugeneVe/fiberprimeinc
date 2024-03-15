@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { MenuOpenProvider } from "./context/MenuOpen";
+import { MenuOpenProvider } from "./context/MenuOpenContext";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./styles/index.css";
 import Aos from "aos";

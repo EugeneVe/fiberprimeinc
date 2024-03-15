@@ -94,4 +94,8 @@
     @media screen and (max-width: 990px) {
         height: 100%;
     }
+    @media screen and (max-height: 900px) {
+        height: 100%;
+        padding-bottom: 80px;
+    }
 }

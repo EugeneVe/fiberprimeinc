@@ -45,9 +45,8 @@ const ContactSection = () => {
                         </a>
                         <span> Phone: </span>
                         <a href="tel:">+1(404)556-2876</a>
-                        <a href="tel:">+1(770)545-7169</a>
                         <span>Email: </span>
-                        <a href="mailto:elijah@prime-fiber.com">elijah@prime-fiber.com</a>
+                        <a href="mailto:info@prime-fiber.com">info@prime-fiber.com</a>
                     </div>
                 </div>
                 <div
