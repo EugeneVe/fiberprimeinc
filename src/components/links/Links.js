@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "context/ThemeContext";
 import { MenuOpenContext } from "context/MenuOpenContext";
 import { Link } from "react-router-dom";
@@ -9,6 +9,18 @@ const Links = () => {
     const location = useLocation();
     const [themeSwith, setThemeSwith] = useContext(ThemeContext);
     const { linksList } = useContext(MenuOpenContext);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 900);
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const getLinkClassName = (pathname, currentPage) => {
         return pathname === currentPage ? "on-page" : "";
@@ -16,7 +28,7 @@ const Links = () => {
 
     return (
         <div className="links-wrapper open-links">
-            {linksList && (
+            {linksList || !isMobile ? (
                 <ul className="links-list">
                     <li>
                         <Link
@@ -74,6 +86,8 @@ const Links = () => {
                         />
                     </div>
                 </ul>
+            ) : (
+                <></>
             )}
         </div>
     );
