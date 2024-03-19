@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 import "./PartnershipSection.scss";
+import CustomButton from "components/customButton/CustomButton";
 
 const PartnershipSection = () => {
     const location = useLocation();
@@ -41,7 +42,7 @@ const PartnershipSection = () => {
                             to="/partnership"
                             className="mobile-button"
                         >
-                            <button>Please fill out the form</button>
+                            <CustomButton title="Please fill out the form" />
                         </Link>
                     )}
                 </div>

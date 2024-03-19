@@ -1,13 +1,19 @@
 import React, { useContext } from "react";
-import { MenuOpenContext } from "../../context/MenuOpen";
-import Links from "../links/Links";
+import { MenuOpenContext } from "context/MenuOpenContext";
 import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/icons/FiberPrimeLogo.svg";
+import { ReactComponent as Logo } from "assets/icons/FiberPrimeLogo.svg";
+import { ReactComponent as DotsIcon } from "assets/icons/Dots.svg";
+import { ReactComponent as CrossIcon } from "assets/icons/Cross.svg";
+import Links from "../links/Links";
 import "./Header.scss";
 
 const Header = () => {
-    const { open, setOpen } = useContext(MenuOpenContext);
-    const menuToggle = () => setOpen(!open);
+    const { open, setOpen, setLinksList, linksList } = useContext(MenuOpenContext);
+    const menuToggle = () => {
+        setOpen(!open);
+        setLinksList(!linksList);
+    };
+    const isiPhone = /iPhone/i.test(navigator.userAgent);
 
     return (
         <div className="header-wrapper">
@@ -23,7 +29,7 @@ const Header = () => {
                     className="menu-toggle-icon"
                     onClick={menuToggle}
                 >
-                    {open ? <span>╳</span> : <span>☲</span>}
+                    <div className={`toggle-icon ${isiPhone ? "iphone-style" : ""}`}> {open ? <CrossIcon /> : <DotsIcon />}</div>
                 </div>
             </div>
         </div>

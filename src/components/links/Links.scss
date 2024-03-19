@@ -12,13 +12,13 @@
         transition: all 200ms ease;
         overflow: hidden;
     }
-    ul {
+    .links-list {
         @include flexbox(row, center, center);
         gap: 20px;
         padding: 0;
         @media screen and (max-width: 990px) {
             @include flexbox(column, center, center);
-            width: 100%;
+            // width: 100%;
         }
         li {
             list-style-type: none;

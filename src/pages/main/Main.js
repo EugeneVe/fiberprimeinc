@@ -6,6 +6,7 @@ import PartnershipSection from "../../layouts/partnershipSection/PartnershipSect
 import CareersSection from "../../layouts/careersSection/CareersSection";
 import TrainingSection from "../../layouts/trainingSection/TrainingSection";
 import ContactSection from "../../layouts/contactSection/ContactSection";
+import CommentsSection from "layouts/commentsSection/CommentsSection";
 
 const Main = () => {
     return (
@@ -17,6 +18,7 @@ const Main = () => {
             <CareersSection />
             <TrainingSection />
             <ContactSection />
+            <CommentsSection />
         </>
     );
 };

@@ -4,7 +4,6 @@ import ContactsImage from "assets/image/illustration_contacts.jpg";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 import "./ContactSection.scss";
-import CommentSection from "components/commentSection/CommentSection";
 
 const ContactSection = () => {
     const location = useLocation();
@@ -46,9 +45,8 @@ const ContactSection = () => {
                         </a>
                         <span> Phone: </span>
                         <a href="tel:">+1(404)556-2876</a>
-                        <a href="tel:">+1(770)545-7169</a>
                         <span>Email: </span>
-                        <a href="mailto:elijah@prime-fiber.com">elijah@prime-fiber.com</a>
+                        <a href="mailto:info@prime-fiber.com">info@prime-fiber.com</a>
                     </div>
                 </div>
                 <div
@@ -69,7 +67,6 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <CommentSection />
         </div>
     );
 };
