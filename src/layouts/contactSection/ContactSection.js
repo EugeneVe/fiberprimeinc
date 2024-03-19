@@ -4,6 +4,7 @@ import ContactsImage from "assets/image/illustration_contacts.jpg";
 import "aos/dist/aos.css";
 import "../layoutsStyles/SectionsStyle.scss";
 import "./ContactSection.scss";
+import CommentSection from "components/commentSection/CommentSection";
 
 const ContactSection = () => {
     const location = useLocation();
@@ -68,6 +69,7 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
+            <CommentSection />
         </div>
     );
 };

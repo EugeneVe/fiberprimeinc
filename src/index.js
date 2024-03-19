@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { MenuOpenProvider } from "./context/MenuOpen";
-import { ThemeProvider } from "./context/ThemeContext";
-import "./styles/index.css";
+import { MenuOpenProvider } from "context/MenuOpen";
+import { ThemeProvider } from "context/ThemeContext";
 import Aos from "aos";
 import App from "./App";
+import "./styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 Aos.init();

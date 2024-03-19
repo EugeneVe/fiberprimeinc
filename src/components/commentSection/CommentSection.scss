@@ -1,0 +1,25 @@
+.comments-wrapper {
+    padding: 80px 0;
+    .comments-content {
+        .comment-date {
+            font-size: 12px;
+        }
+        .comment-name {
+            text-align: end;
+            font-style: italic;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .comment-text {
+            border-bottom: 1px solid #000;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+    .comment-send {
+        height: 56px;
+        width: 120px;
+    }
+}
